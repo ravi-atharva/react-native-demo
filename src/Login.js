@@ -56,7 +56,7 @@ class LoginScreen extends React.Component {
             this.setState({ password: text });
           }}
         />
-        <View style={{ alignItems: 'center' }}>
+        <View style={styles.centerAlign}>
           <Button title='Login' onPress={() => this.buttonClick()} />
         </View>
       </View>
