@@ -19,5 +19,12 @@ export default StyleSheet.create({
   },
   centerAlign: {
     alignItems: 'center'
+  },
+  setImage:{
+    width:150,
+    height:150,
+  },
+  setMargin:{
+    margin:10
   }
 });
