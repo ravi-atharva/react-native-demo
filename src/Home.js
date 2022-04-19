@@ -47,15 +47,22 @@ class HomeScreen extends React.Component {
       Alert.alert('Alert', 'Enter Address');
       return;
     }
-    this.props.navigation.navigate('Profile Details', {'userDetails':this.state});
+    this.props.navigation.navigate('Profile Details', {
+      userDetails: this.state
+    });
   };
 
   render() {
     return (
       <View>
-        <View style={styles.centerAlign}>
-          { this.state.fileUri ? <Image source={{ uri: this.state.fileUri }} style={styles.setImage} /> : null}
-        </View>
+        {this.state.fileUri ? (
+          <View style={styles.centerAlign}>
+            <Image
+              source={{ uri: this.state.fileUri }}
+              style={styles.setImage}
+            />
+          </View>
+        ) : null}
         <TextInput
           placeholder='First Name'
           style={styles.input}
@@ -82,7 +89,7 @@ class HomeScreen extends React.Component {
           <Button title='Choose Image' onPress={this.chooseImage} />
         </View>
         <View style={styles.centerAlign}>
-          <Button title='Submit' onPress={() => this.buttonClick()} />
+          <Button title='Submit' onPress={this.buttonClick} />
         </View>
       </View>
     );
