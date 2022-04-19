@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/Home';
 import LoginScreen from './src/Login';
 import ProfileDetailScreen from './src/ProfileDetails';
+import Profile from './src/Profile';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,10 @@ class App extends React.Component {
           <Stack.Screen
             name='Profile Details'
             component={ProfileDetailScreen}
+          />
+          <Stack.Screen
+            name='Profile'
+            component={Profile}
           />
         </Stack.Navigator>
       </NavigationContainer>
