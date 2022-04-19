@@ -26,5 +26,14 @@ export default StyleSheet.create({
   },
   setMargin: {
     margin: 10
+  },
+  container: {
+    flex: 1,
+    justifyContent: 'center'
+  },
+  horizontal: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 10
   }
 });

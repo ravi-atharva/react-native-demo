@@ -4,8 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/Home';
 import LoginScreen from './src/Login';
-import ProfileDetailScreen from './src/ProfileDetails';
 import Profile from './src/Profile';
+import ProfileDetailScreen from './src/ProfileDetails';
+import ActivityIndicatorPage from './src/ActivityIndicator';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +33,10 @@ class App extends React.Component {
           <Stack.Screen
             name='Profile'
             component={Profile}
+          />
+          <Stack.Screen
+            name='Activity Indicator'
+            component={ActivityIndicatorPage}
           />
         </Stack.Navigator>
       </NavigationContainer>
