@@ -9,7 +9,7 @@ import ProfileDetailScreen from './src/ProfileDetails';
 import ActivityIndicatorPage from './src/ActivityIndicator';
 import ButtonPage from './src/Button';
 import FlatListPage from './src/FlatList';
-
+import KeyboardAvoidingViewPage from './src/KeyboardAvoidingView';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,21 +32,16 @@ class App extends React.Component {
             name='Profile Details'
             component={ProfileDetailScreen}
           />
-          <Stack.Screen
-            name='Profile'
-            component={Profile}
-          />
+          <Stack.Screen name='Profile' component={Profile} />
           <Stack.Screen
             name='Activity Indicator'
             component={ActivityIndicatorPage}
           />
+          <Stack.Screen name='Button' component={ButtonPage} />
+          <Stack.Screen name='Flat List' component={FlatListPage} />
           <Stack.Screen
-            name='Button'
-            component={ButtonPage}
-          />
-          <Stack.Screen
-            name='Flat List'
-            component={FlatListPage}
+            name='Keyboard Avoiding'
+            component={KeyboardAvoidingViewPage}
           />
         </Stack.Navigator>
       </NavigationContainer>

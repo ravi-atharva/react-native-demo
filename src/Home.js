@@ -40,6 +40,14 @@ class HomeScreen extends React.Component {
             }}
           />
         </View>
+        <View style={[styles.centerAlign, styles.bottomMargin]}>
+          <Button
+            title='Keyboard Avoiding View'
+            onPress={() => {
+              this.props.navigation.navigate('Keyboard Avoiding');
+            }}
+          />
+        </View>
       </View>
     );
   }
