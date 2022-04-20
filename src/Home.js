@@ -24,6 +24,22 @@ class HomeScreen extends React.Component {
             }}
           />
         </View>
+        <View style={[styles.centerAlign, styles.bottomMargin]}>
+          <Button
+            title='Button'
+            onPress={() => {
+              this.props.navigation.navigate('Button');
+            }}
+          />
+        </View>
+        <View style={[styles.centerAlign, styles.bottomMargin]}>
+          <Button
+            title='Flat List'
+            onPress={() => {
+              this.props.navigation.navigate('Flat List');
+            }}
+          />
+        </View>
       </View>
     );
   }

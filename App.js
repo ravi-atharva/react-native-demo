@@ -7,6 +7,8 @@ import LoginScreen from './src/Login';
 import Profile from './src/Profile';
 import ProfileDetailScreen from './src/ProfileDetails';
 import ActivityIndicatorPage from './src/ActivityIndicator';
+import ButtonPage from './src/Button';
+import FlatListPage from './src/FlatList';
 
 
 const Stack = createNativeStackNavigator();
@@ -37,6 +39,14 @@ class App extends React.Component {
           <Stack.Screen
             name='Activity Indicator'
             component={ActivityIndicatorPage}
+          />
+          <Stack.Screen
+            name='Button'
+            component={ButtonPage}
+          />
+          <Stack.Screen
+            name='Flat List'
+            component={FlatListPage}
           />
         </Stack.Navigator>
       </NavigationContainer>

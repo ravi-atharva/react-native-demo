@@ -35,5 +35,22 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 10
+  },
+  container: {
+    flex: 1,
+    marginTop: 0
+  },
+  item: {
+    backgroundColor: '#FEFEFE',
+    padding: 15,
+    marginVertical: 8,
+    marginHorizontal: 16,
+    borderRadius: 10,
+    borderLeftWidth:5,
+    borderLeftColor: '#65c28d'
+  },
+  title: {
+    fontSize: 22,
+    color:'#000000'
   }
 });
