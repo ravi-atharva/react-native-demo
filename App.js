@@ -10,6 +10,7 @@ import ActivityIndicatorPage from './src/ActivityIndicator';
 import ButtonPage from './src/Button';
 import FlatListPage from './src/FlatList';
 import KeyboardAvoidingViewPage from './src/KeyboardAvoidingView';
+import ModalScreen from './src/Modal';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,6 +43,10 @@ class App extends React.Component {
           <Stack.Screen
             name='Keyboard Avoiding'
             component={KeyboardAvoidingViewPage}
+          />
+          <Stack.Screen
+            name='Modal Open'
+            component={ModalScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>

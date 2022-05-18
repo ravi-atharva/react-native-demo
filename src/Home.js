@@ -48,6 +48,14 @@ class HomeScreen extends React.Component {
             }}
           />
         </View>
+        <View style={[styles.centerAlign, styles.bottomMargin]}>
+          <Button
+            title='View Modal'
+            onPress={() => {
+              this.props.navigation.navigate('Modal Open');
+            }}
+          />
+        </View>
       </View>
     );
   }
